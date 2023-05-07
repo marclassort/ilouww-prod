@@ -1,19 +1,159 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <title>{% block title %}Welcome!{% endblock %}</title>
-        <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 128 128%22><text y=%221.2em%22 font-size=%2296%22>⚫️</text></svg>">
-        {# Run `composer require symfony/webpack-encore-bundle` to start using Symfony UX #}
-        {% block stylesheets %}
-            {{ encore_entry_link_tags('app') }}
-        {% endblock %}
+<html lang="fr">
 
-        {% block javascripts %}
-            {{ encore_entry_script_tags('app') }}
-        {% endblock %}
-    </head>
-    <body>
-        {% block body %}{% endblock %}
-    </body>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ilouww est une agence de communication spécialisée dans le design web et graphique. Nous accompagnons et conseillons les entreprises et institutions dans les différentes étapes de leur communication.">
+    <meta name="keywords" content="ilouww, agence digitale, communication, marketing, réseaux sociaux, développement web, agence de communication digitale, aix en provence, antibes, nice, cannes">
+    <meta name="author" content="ilouww">
+    <title>Ilouww - Agence de communication digitale</title>
+    <link rel="shortcut icon" href="/img/favicon.jpeg">
+    <link rel="stylesheet" href="/assets/css/plugins.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/colors/violet.css">
+    <link rel="preload" href="/assets/css/fonts/urbanist.css" as="style" onload="this.rel='stylesheet'">
+</head>
+
+<body>
+
+<div class="content-wrapper">
+    <header class="wrapper bg-soft-primary">
+        <nav class="navbar navbar-expand-lg center-logo transparent position-absolute navbar-dark">
+            <div class="container justify-content-between align-items-center">
+                <div class="d-flex flex-row w-100 justify-content-between align-items-center d-lg-none">
+                    <div class="navbar-brand"><a href="/">
+                            <img class="logo-dark" src="/img/logo-ilouww-black.png" srcset="/img/logo-ilouww-black.png" alt="" style="width: 45% !important;" />
+                            <img class="logo-light" src="/img/logo-ilouww-white.png" srcset="/img/logo-ilouww-white.png" alt="" style="width: 45% !important;" />
+                        </a></div>
+                    <div class="navbar-other ms-auto">
+                        <ul class="navbar-nav flex-row align-items-center">
+                            <li class="nav-item d-lg-none">
+                                <button class="hamburger offcanvas-nav-btn"><span></span></button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="navbar-collapse-wrapper d-flex flex-row align-items-center w-100">
+                    <div class="navbar-collapse offcanvas offcanvas-nav offcanvas-start">
+                        <div class="offcanvas-header mx-lg-auto order-0 order-lg-1 d-lg-flex px-lg-15">
+                            <a href="/" class="transition-none d-none d-lg-flex"><img class="logo-dark" src="/img/logo-ilouww-black.png" srcset="/img/logo-ilouww-black.png 2x" alt="" />
+                                <img class="logo-light" src="/img/logo-ilouww-white.png" srcset="/img/logo-ilouww-white.png 2x" alt="" /></a>
+                            <h3 class="text-white fs-30 mb-0 d-lg-none">Ilouww</h3>
+                            <button type="button" class="btn-close btn-close-white d-lg-none" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                        <div class="w-100 order-1 order-lg-0 d-lg-flex offcanvas-body">
+                            <ul class="navbar-nav ms-lg-auto">
+                                <a class="nav-link" href="/">Accueil</a>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Services</a>
+                                    <ul class="dropdown-menu">
+                                        <li class="nav-item"><a class="dropdown-item" href="/services/illustration">Illustration</a></li>
+                                        <li class="nav-item"><a class="dropdown-item" href="/services/web">Web</a></li>
+                                        <li class="nav-item"><a class="dropdown-item" href="/services/branding">Branding</a></li>
+                                        <li class="nav-item"><a class="dropdown-item" href="/services/support-marketing">Support marketing</a></li>
+                                        <li class="nav-item"><a class="dropdown-item" href="/services/infographie">Infographie</a></li>
+                                        <li class="nav-item"><a class="dropdown-item" href="/services/ui-ux">UI/UX</a></li>
+                                        <li class="nav-item"><a class="dropdown-item" href="/services/reseaux-sociaux">Réseaux sociaux</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="w-100 order-3 order-lg-2 d-lg-flex offcanvas-body">
+                            <ul class="navbar-nav me-lg-auto">
+                                <a class="nav-link" href="/realisations">Réalisations</a>
+                                <a class="nav-link" href="/a-propos">À propos</a>
+                            </ul>
+                        </div>
+                        <div class="offcanvas-body d-lg-none order-4 mt-auto">
+                            <div class="offcanvas-footer">
+                                <div>
+                                    <a href="mailto:ilouw.design@gmail.com" class="link-inverse">ilouw.design@gmail.com</a>
+                                    <br /> +33 6 09 63 18 38 <br />
+                                    <nav class="nav social social-white mt-4">
+                                        <a href="https://www.facebook.com/ilouww"><i class="uil uil-facebook-f"></i></a>
+                                        <a href="https://www.instagram.com/ilouww"><i class="uil uil-instagram"></i></a>
+                                        <a href="https://www.linkedin.com/in/ilo-andria-ntoanina-a32462137"><i class="uil uil-linkedin"></i></a>
+                                    </nav>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+{% block body %}
+{% endblock %}
+
+<footer class="bg-light">
+    <div class="container pb-13 pb-md-15">
+        <div class="card image-wrapper bg-full bg-image bg-overlay bg-overlay-300 mb-14" data-image-src="/assets/img/photos/bg16.png">
+            <div class="card-body p-10 p-xl-12">
+                <div class="row text-center">
+                    <div class="col-xl-11 col-xxl-9 mx-auto">
+                        <h2 class="fs-16 text-uppercase text-white mb-3">Rejoignez-nous</h2>
+                        <h3 class="display-3 mb-8 px-lg-8 text-white">Nous avons la <span class="underline-3 style-2 yellow">confiance</span> de plus d'une vingtaine de clients. Rejoignez-les et faites fructifier vos affaires !</h3>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-center">
+                    <span><a href="mailto:ilouw.design@gmail.com" class="btn btn-white rounded">Nous écrire</a></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="row gy-6 gy-lg-0">
+            <div class="col-md-4 col-lg-3">
+                <div class="widget">
+                    <img class="mb-4" src="/img/logo-ilouww-black.png" srcset="/img/logo-ilouww-black.png 2x" alt="" />
+                    <p class="mb-4">© 2023 Ilouww. <br class="d-none d-lg-block" />Tous droits réservés.</p>
+                </div>
+            </div>
+
+            <div class="col-md-4 col-lg-3">
+                <div class="widget">
+                    <h4 class="widget-title mb-3">Nous contacter</h4>
+                    <address class="pe-xl-15 pe-xxl-17">
+                        Agence de communication | Branding | Web | Print | Illustration | Design | Aix-en-Provence | Marseille | Cannes | Antibes | Nice</address>
+                    <a href="mailto:ilouw.design@gmail.com">ilouw.design@gmail.com</a><br /> +33 6 09 63 18 38
+                </div>
+            </div>
+
+            <div class="col-md-4 col-lg-3">
+                <div class="widget">
+                    <h4 class="widget-title mb-3">Liens du site</h4>
+                    <ul class="list-unstyled  mb-0">
+                        <li><a href="/contact">Contact</a></li>
+                        <li><a href="/realisations">Réalisations</a></li>
+                        <li><a href="/a-propos">À propos</a></li>
+                        <li><a href="/mentions-legales">Mentions légales</a></li>
+                        <li><a href="/politique-de-confidentialite">Politique de confidentialité</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-md-12 col-lg-3">
+                <div class="widget">
+                    <h4 class="widget-title mb-3">Nous suivre</h4>
+                    <nav class="nav social">
+                        <a href="https://www.facebook.com/ilouww"><i class="uil uil-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/ilouww"><i class="uil uil-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/ilo-andria-ntoanina-a32462137"><i class="uil uil-linkedin"></i></a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<div class="progress-wrap">
+    <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+        <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+    </svg>
+</div>
+<script src="/assets/js/plugins.js"></script>
+<script src="/assets/js/theme.js"></script>
+</body>
+
 </html>
